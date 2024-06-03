@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Time</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Party Time</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 class="fade-in">Welcome to Party Time</h2>
+                <p class="fade-in">We organize unforgettable events!</p>
+                <button class="btn fade-in" onclick="navigateToServices()">Explore Our Services</button>
+            </div>
+        </section>
+        <section class="highlights container">
+            <div class="slide-up" data-aos="fade-up">
+                <h3>Themed Events</h3>
+                <p>Make your parties unforgettable with our unique themes.</p>
+            </div>
+            <div class="slide-up" data-aos="fade-up" data-aos-delay="200">
+                <h3>Marquee Parties</h3>
+                <p>Elegant and stylish marquee setups for any occasion.</p>
+            </div>
+            <div class="slide-up" data-aos="fade-up" data-aos-delay="400">
+                <h3>Special Celebrations</h3>
+                <p>We cater to all special celebrations including weddings, birthdays, and more.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Party Time. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function navigateToServices() {
+            document.querySelector('.btn').classList.add('animate-button');
+            setTimeout(() => {
+                window.location.href = 'services.html';
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
